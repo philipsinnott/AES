@@ -1,6 +1,6 @@
 # AES-256
 ---
-This repository holds my implementation of AES-256 using ECB. It's the result of the project work I did whilst reading Cryptography (7.5 HP) at Högskolan Dalarna.
+This repository holds my implementation of AES-256 with ECB. It's the result of the project work I did whilst reading Cryptography (7.5 HP) at Högskolan Dalarna.
 ## Mode of Operation
 ---
 This implementation uses [ECB, i.e. Electronic codebook](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Common_modes). The plaintext is broken down into 16 byte blocks, and is then, independent of any other blocks, encrypted into ciphertext. No block depends on any other block, and as a result, we are also able to decrypt each block individually. If an adversary performs cryptanalysis on it, it will, due to the lack of confusion, be easier to spot data patterns compared to when using CBC. ECB mode is <i>not</i> considered to be semantically secure, as just by examining the ciphertext from AES with ECB, we can potentially identify critical information about the plaintext.

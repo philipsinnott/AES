@@ -21,3 +21,11 @@ In AES, we mainly handle diffusion through $shiftRows()$ and $mixColumns()$. We 
 ## Performance
 ---
 There are certainly things I can do to improve the performance of my code. I could reduce the amount of nested for loops ($O(n^2)$ time complexity), reduce the amount of conversions between different data types, such as lists, strings, and integers. All my methods are dependent on the blocks being in 2D list format, so here and there I need to flatten the lists, and vice versa, transform it from 1D to 2D again. Using 2D lists have however added the benefit of being able to easier understand the code, and they have in general just been easier to work with, in my opinion. I believe working with blocks as 1D lists or even strings (immutable) can be quite frustrating and nonintuitive sometimes, so that's why I decided to use 2D lists instead, even though it might cost me processing speed. Either way, the main goal of this project was to implement AES, so performance wasn't really optimized and prioritized so it could definitely be improved.
+
+## Try
+---
+```
+git clone https://github.com/philipsinnott/AES.git
+cd AES
+```
+Open in Jupyter Notebook and run all code blocks.
